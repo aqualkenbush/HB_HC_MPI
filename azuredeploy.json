@@ -11,7 +11,7 @@
     },
     "VMsku": {
       "type": "string",
-      "defaultValue": "Standard_HB60rs",
+      "defaultValue": "Standard_HC44rs",
       "allowedValues": [
         "Standard_HC44rs",
         "Standard_HB60rs"
@@ -28,7 +28,7 @@
     },
     "authenticationType": {
       "type": "string",
-      "defaultValue": "password",
+      "defaultValue": "sshPublicKey",
       "allowedValues": [
         "password",
         "sshPublicKey"
@@ -39,7 +39,7 @@
     },
     "adminPassword": {
       "type": "securestring",
-      "defaultValue": "",
+      "defaultValue": "C&C W3lln3ss",
       "metadata": {
         "description": "Admin password for the virtual machines"
       }
@@ -53,21 +53,21 @@
     },
     "existingVNetName": {
         "type": "string",
-        "defaultValue": "",
+        "defaultValue": "noaaTO11net",
         "metadata": {
           "description": "name of existing Virtual Network"
       }
     },
     "existingVNetResourceGroup": {
       "type": "string",
-      "defaultValue": "",
+      "defaultValue": "noaaTO11rg",
       "metadata": {
         "description": "name of Resource Group for existing Virtual Network"
       }
     },
     "existingSubnetName": {
       "type": "string",
-      "defaultValue": "",
+      "defaultValue": "noaaTO11MgmtSubnet",
       "metadata": {
         "description": "name of existing Virtual Network"
       }
@@ -86,7 +86,7 @@
         "publisher": "OpenLogic",
         "offer": "CentOS",
         "sku": "7.6",
-        "version": "latest"
+        "version": "7.6.20181219"
       }
     },
     "NodeimageReference": "[variables('Images')['CentOS_7.6']]",
