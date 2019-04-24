@@ -22,6 +22,7 @@
     },
     "adminUserName": {
       "type": "string",
+      "defaultValue": "azureadmin",
       "metadata": {
         "description": "User name for the Virtual Machine."
       }
